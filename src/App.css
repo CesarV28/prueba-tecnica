@@ -13,6 +13,8 @@
   --text-color-white-dark: hsl(var(--hue), var(--sat), 80%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --first-color: #0c62fb;
+  --first-color-dark: #131B85;
+  --first-color-ligth: #569cf6;
   --container-color: #fff;
 
   /* ======== Font ======== */

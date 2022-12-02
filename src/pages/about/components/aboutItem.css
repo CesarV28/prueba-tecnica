@@ -17,6 +17,7 @@
 .about__ul-li{
     height: 10rem;
     font-size: var(--large-font-size);
+    justify-self: center;
 }
 
 .li__span{
@@ -45,4 +46,35 @@
 
 .about__content-text{
     font-size: var(--normal-font-size);
+}
+/* ======== Break points ======== */
+/* Large devices */
+@media screen and (max-width: 992px) {
+    .about{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .about__img{
+        padding: 2rem;
+    }
+}
+/* Medium devices */
+@media screen and (max-width: 768px) {
+
+    
+}
+  
+@media screen and (max-width: 576px) {
+    .about__ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about__img{
+        padding: .5rem;
+    }
+}
+
+/* Small devices */
+@media screen and (max-width: 350px) {
+   
+    
 }
