@@ -164,6 +164,23 @@ img{
   font-weight: var(--font-semi-bold);
 }
 
+
+.button-seconday{
+  display: inline;
+  width: 10rem;
+  background-color: transparent;
+  color: var(--first-color);
+  border: solid 1px var(--first-color);
+  padding: 1rem 2rem;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.button-seconday:hover {
+  color: var(--body-color);
+  background-color: var(--first-color);
+}
+
 /* .button:hover{
   color: var(--first-color);
   background-color: var(--container-color);
@@ -178,6 +195,7 @@ img{
   display: inline-flex;
   align-items: center;
 }
+
 
 /* ======== Break points ======== */
 /* Large devices */

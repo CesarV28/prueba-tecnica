@@ -1,62 +1,116 @@
-.metodologias__article{
-    margin-bottom: 2rem;
-}
-.article__content{
+
+.home__do{
+    padding: 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
 }
 
-.article__content-title{
-    text-transform: uppercase;
+.do__title{
+    color: var(--first-color);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--medium-font-size);
 }
 
-.article__content-text{
+.do__subTitle{
+    color: var(--title-color-dark);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--big-font-size);
+    line-height: 5rem;
+    padding-right: 8rem;
+}
+
+
+/* Info section */
+
+.home__info{
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.info__img-left{
+    grid-column: 1 / 3;
+    
+}
+
+.img-left{
+    width: 0;
+    height: 0;
+    border-top: 150px solid var(--first-color);
+    border-right: 300px solid transparent;
+}
+
+.info__img-right{
+    grid-column: 7 / 9;
+    width: 0;
+    height: 0;
+    border-bottom: 150px solid var(--first-color);
+    border-left: 300px solid transparent;
+}
+
+.info__content{
+    grid-column: 3 / 7;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info__content-title{
+    color: var(--first-color);
     font-size: var(--normal-font-size);
     font-weight: var(--font-semi-bold);
 }
 
-.metodologias__card{
-    grid-template-columns: repeat(5, 1fr);
+/* .info__content-text{ //No hace nada
+    
+} */
+
+/* Technologies */
+.home__technologies{
+    padding: 2rem 4rem;
 }
 
-.card{
-    width: 10rem;
-    min-width: 4rem;
-    height: 10rem;
-    min-height: 4rem;
-    background-color: cadetblue;
+.technologies__title{
+    margin-bottom: 2rem;
+    color: var(--first-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.technologies__content{
+    grid-template-columns: repeat(4, 20%);
+    justify-content: center;
+}
+
+.technologies__content-item{
+    width: 15rem;
+    height: 15rem;
     justify-self: center;
 }
+
+
+
 
 /* ======== Break points ======== */
 /* Large devices */
 @media screen and (max-width: 992px) {
-    .metodologias__card{
-        grid-template-columns: repeat(4, 1fr);
+    .technologies__content{
+        grid-template-columns: repeat(2, 40%);
     }
 }
-
 /* Medium devices */
 @media screen and (max-width: 768px) {
-
-    .metodologias__card{
-        grid-template-columns: repeat(3, 1fr);
+  
+    .technologies__content{
+        grid-template-columns: repeat(1, 80%);
+        align-items: center;
     }
+  
 }
   
 @media screen and (max-width: 576px) {
-    .metodologias__card{
-        grid-template-columns: repeat(2, 1fr);
-    }
+
 }
 
 /* Small devices */
 @media screen and (max-width: 350px) {
-    .metodologias__card{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
+
 }

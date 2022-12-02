@@ -1,7 +1,7 @@
 
+
 .about{
     grid-template-columns: repeat(2, 1fr);
-    padding: 4rem 4rem 4rem 0;
 }
 
 .about__img{

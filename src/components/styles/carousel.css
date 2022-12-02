@@ -1,0 +1,51 @@
+.carousel{
+    background-color: black;
+}
+
+.carousel__content{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.carousel__img{
+    width: 50rem;
+    height: 20rem;
+    opacity: 0;
+    transition: 1s;
+}
+
+
+.carousel__btn{
+    position: absolute;
+    z-index: var(--z-tooltip);
+    padding: 1rem 2rem;
+    background-color: transparent;
+    font-size: 4rem;
+    color: var(--first-color);
+}
+
+.carousel__btn:hover{
+    background-color: rgba(255, 255, 255, 0.139);
+}
+
+.btn-left{
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.btn-right{
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+.loaded{
+    opacity: 1; 
+}

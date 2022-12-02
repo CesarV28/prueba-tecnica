@@ -1,6 +1,6 @@
-import './about.css'
+import './aboutItem.css'
 
-export const About = () => {
+export const AboutItem = () => {
   return (
     <section className="section about grid">
       <div className="about__img">
