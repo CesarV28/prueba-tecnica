@@ -22,8 +22,10 @@
   --big-font-size: 3.5rem;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --normal-font-size: 1rem;
+  --h3-font-size: 1.25rem;
+  --large-font-size: 2rem;
+  --medium-font-size: 1.5rem;
+  --normal-font-size: 1.25rem;
   --small-font-size: .875rem;
   --smaller-font-size: .813rem;
   --tiny-font-size: .625rem;
@@ -93,7 +95,6 @@ body{
 h1,h2,h3{
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
-  text-align: center;
 }
 
 ul{
@@ -117,7 +118,7 @@ img{
 
 /* ======== Reusable CSS classes ======== */
 .section{
-  padding: 8rem 0 2rem;
+  padding: 4rem;
 }
 
 .section__title{
@@ -136,6 +137,10 @@ img{
   text-align: center;
 }
 
+.line-text{
+  line-height: 1.75rem;
+}
+
 /* ======== Layout ======== */
 .container{
   max-width: 968px;
@@ -151,16 +156,18 @@ img{
 /* ======== Buttons ======== */
 .button{
   display: inline-block;
-  background-color: var(--title-color);
+  background-color: transparent;
   color: var(--container-color);
   padding: 1.25rem 2rem;
-  border-radius: 1rem;
-  font-weight: var(--font-medium);
+  border: solid 1px var(--container-color);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
 }
 
-.button:hover{
-  background-color: var(--title-color-dark);
-}
+/* .button:hover{
+  color: var(--first-color);
+  background-color: var(--container-color);
+} */
 
 .button__icon{
   margin-left: var(--mb-0-5);
@@ -197,7 +204,7 @@ img{
   }
 
   .section{
-      padding: 2rem 0 4rem;
+      padding: 2rem 2rem 4rem;
   }
 
   .section__subtitle{

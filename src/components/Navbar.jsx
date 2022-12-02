@@ -7,20 +7,18 @@ export const Navbar = () => {
 
     /* ======== Toggle menu ======== */
     const [toggle, setToggle] = useState(false);
-    const [activeNav, setActiveNav] = useState('#home')
+    
 
     const showMenu = () => {
         setToggle(!toggle);
     }
 
-    const onActive = (active) => {
-        setActiveNav(active)
-    }
 
   return (
     <header className='header'>
+        
         <nav className="nav container">
-            <a href="/" className="nav__logo">Cesar</a>
+            <a href="/" className="nav__logo">Turing-IA</a>
 
             <div className={`${ toggle ? 'nav__menu show-menu' : 'nav__menu'}`}>
                 <ul className="nav__list">
@@ -28,66 +26,70 @@ export const Navbar = () => {
                     <li className="nav__item">
                         <a 
                             href="/" 
-                            className={`${ activeNav === '#home' && 'active__link'} nav__link`}
-                            onClick={ () => onActive('#home')}
+                            className={` nav__link`}
                         >
                             {/* <AiOutlineHome className='nav__icon'/> */}
-                            Home
+                            Inicio
                         </a>
                     </li>
                     {/* li item */}
                     <li className="nav__item">
                         <a 
-                            href="" 
-                            className={`${ activeNav === '#about' && 'active__link'} nav__link`}
-                            onClick={ () => onActive('#about')}
+                            href="/nosotros" 
+                            className={`nav__link`}
                         >
                             {/* <AiOutlineUser className='nav__icon'/> */}
-                            About
+                            Nosotros
                         </a>
                     </li>
                     {/* li item */}
                     <li className="nav__item">
                         <a 
-                            href="" 
-                            className={`${ activeNav === '#skills' && 'active__link'} nav__link`}
-                            onClick={ () => onActive('#skills')}
+                            href="/servicios" 
+                            className={`nav__link`}
                         >
                             {/* <AiOutlineFileText className='nav__icon'/> */}
-                            Skills
+                            Servicios
                         </a>
                     </li>
                     {/* li item */}
                     <li className="nav__item">
                         <a 
-                            href="" 
-                            className={`${ activeNav === '#services' && 'active__link'} nav__link`}
-                            onClick={ () => onActive('#services')}
+                            href="/tableu" 
+                            className={`nav__link`}
                         >
                             {/* <BiBriefcaseAlt2 className='nav__icon'/> */}
-                            Services
+                            Tableu
                         </a>
                     </li>
                     {/* li item */}
                     <li className="nav__item">
                         <a 
-                            href="" 
-                            className={`${ activeNav === '#portfolio' && 'active__link'} nav__link`}
-                            onClick={ () => onActive('#portfolio')}
+                            href="/portal" 
+                            className={`nav__link`}
                         >
                             {/* <BiImage className='nav__icon'/> */}
-                            Porfolio
+                            Portal
                         </a>
                     </li>
                     {/* li item */}
                     <li className="nav__item">
                         <a 
-                            href="" 
-                            className={`${ activeNav === '#contact' && 'active__link'} nav__link`}
-                            onClick={ () => onActive('#contact')}
+                            href="/blog" 
+                            className={`nav__link`}
                         >
                             {/* <AiOutlineSend className='nav__icon'/> */}
-                            Contact
+                            Blog
+                        </a>
+                    </li>
+                    {/* li item */}
+                    <li className="nav__item">
+                        <a 
+                            href="/contacto" 
+                            className={`nav__link`}
+                        >
+                            {/* <AiOutlineSend className='nav__icon'/> */}
+                            Contacto
                         </a>
                     </li>
                 </ul>
@@ -109,7 +111,8 @@ export const Navbar = () => {
             </div>
         </nav>
         <div className="hero">
-            <h2 className="hero__title">Convertimos tus datos en un activo más de la empresa</h2>
+            <span className="hero__title">Hacemos tus datos más fáciles de usar</span>
+            <button className="button">Empecemos </button>
         </div>
     </header>
   )

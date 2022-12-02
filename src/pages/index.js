@@ -1,0 +1,7 @@
+export * from './about/About'
+export * from './blog/Blog'
+export * from './contact/Contact'
+export * from './services/Services'
+export * from './portal/Portal'
+export * from './tableu/Tableu'
+export * from './home/Home'

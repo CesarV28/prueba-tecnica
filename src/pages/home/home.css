@@ -1,0 +1,62 @@
+.metodologias__article{
+    margin-bottom: 2rem;
+}
+.article__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.article__content-title{
+    text-transform: uppercase;
+}
+
+.article__content-text{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.metodologias__card{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.card{
+    width: 10rem;
+    min-width: 4rem;
+    height: 10rem;
+    min-height: 4rem;
+    background-color: cadetblue;
+    justify-self: center;
+}
+
+/* ======== Break points ======== */
+/* Large devices */
+@media screen and (max-width: 992px) {
+    .metodologias__card{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Medium devices */
+@media screen and (max-width: 768px) {
+
+    .metodologias__card{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+  
+@media screen and (max-width: 576px) {
+    .metodologias__card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small devices */
+@media screen and (max-width: 350px) {
+    .metodologias__card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
