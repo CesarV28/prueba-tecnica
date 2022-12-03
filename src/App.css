@@ -16,6 +16,7 @@
   --first-color-dark: #131B85;
   --first-color-ligth: #569cf6;
   --container-color: #fff;
+  --bg-color-gray: #f2f3f4;
 
   /* ======== Font ======== */
   --body-font: 'Raleway', sans-serif;;
@@ -198,6 +199,12 @@ img{
   align-items: center;
 }
 
+.shadow {
+  -webkit-box-shadow: 7px 10px 5px -3px rgba(0,0,0,0.23);
+  -moz-box-shadow: 7px 10px 5px -3px rgba(0,0,0,0.23);
+  box-shadow: 7px 10px 5px -3px rgba(0,0,0,0.23);
+}
+
 
 /* ======== Break points ======== */
 /* Large devices */
@@ -220,7 +227,7 @@ img{
 @media screen and (max-width: 768px) {
 
   body{
-      margin: 0 0 var(--header-height) 0;
+      margin: 0 0 0 0;
   }
 
   .section{

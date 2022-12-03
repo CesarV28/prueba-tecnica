@@ -21,6 +21,7 @@
 .nav__logo{
     font-size: 2rem;
     color: var(--title-color-white);
+    padding-top: 2rem;
 }
 
 .nav__list{
@@ -47,18 +48,25 @@
 
 .hero{
     height: 30rem;
-    padding-top: 7rem;
-    margin-left: 5rem;
+    padding-top: 5rem;
+    margin-left: 10rem;
 }
 
 .hero__title{
+    display: block;
+    color: var(--text-color-white);
+    font-size: 3.5rem;
+    font-weight: var(--font-bold);
+}
+
+.hero__subtitle {
     display: block;
     width: 30rem;
     margin-bottom: 2rem;
     color: var(--text-color-white);
     font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 4.5rem;
+    font-weight: var(--font-semi-bold);
+    line-height: 3.5rem;
 }
 
 
@@ -137,16 +145,30 @@
         display: block;
     }
 
+    .nav__toggle-open{
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
+    }
+
     .nav__close{
         position: absolute;
     }
+
+    .hero{
+        padding: 2rem; 
+        height: 100%;
+    }
+
+    .hero__subtitle{
+        width: 100%;
+    }
 }
 
-/* Medium devices */
 @media screen and (max-width: 576px) {
     .hero{
         margin-left: 0;
-        padding: 2rem;
+        padding: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;

@@ -1,12 +1,22 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
+
+import { heroData } from '../data/hero_data';
 
 import './styles/navbar.css'
-
 
 export const Navbar = () => {
 
     /* ======== Toggle menu ======== */
     const [toggle, setToggle] = useState(false);
+    const [hero, setHero] = useState('');
+    const { pathname } = useLocation();
+
+
+    useEffect(() => {
+        console.log(heroData[`${pathname}`])
+        setHero(heroData[`${pathname}`])
+    }, [pathname])
     
 
     const showMenu = () => {
@@ -103,7 +113,7 @@ export const Navbar = () => {
             </div>
 
             <div 
-                className="nav__toggle"
+                className="nav__toggle nav__toggle-open"
                 onClick={showMenu}
             >
                 {/* <AiOutlineAppstore className='nav__icon'/> */}
@@ -111,7 +121,8 @@ export const Navbar = () => {
             </div>
         </nav>
         <div className="hero">
-            <span className="hero__title">Hacemos tus datos más fáciles de usar</span>
+            <span className="hero__title">{hero.title}</span>
+            <span className="hero__subtitle">{hero.subtitle}</span>
             <button className="button">Empecemos </button>
         </div>
     </header>

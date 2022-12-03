@@ -1,6 +1,7 @@
 
 
 import { Carousel } from '../../components/Carousel'
+import { HomeForm } from './components/HomeForm'
 import './home.css'
 
 export const Home = () => {
@@ -34,7 +35,7 @@ export const Home = () => {
           </div>
         </section>
 
-        <div className="home__technologies ">
+        <div className="home__technologies">
           <h3 className="technologies__title">LA MANERA IDEAL PARA MANEJAR TUS DATOS</h3>
           <div className="technologies__content grid">
             <div className="technologies__content-item">
@@ -54,6 +55,7 @@ export const Home = () => {
         
         <Carousel/>
 
+        <HomeForm/>
     </main>
   )
 }

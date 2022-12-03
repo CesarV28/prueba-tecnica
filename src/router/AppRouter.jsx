@@ -3,6 +3,9 @@ import { MainLayout } from '../layout/MainLayout'
 import { Home, About, Portal, Tableu, Services, Blog, Contact } from '../pages/'
 
 export const AppRouter = () => {
+
+  
+
   return (
     
     <Routes>
