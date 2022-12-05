@@ -1,6 +1,12 @@
+import { Form } from "../../components/Form";
+
 
 export const Contact = () => {
+ 
   return (
-    <div>Contact</div>
+    <>
+      <Form/>
+    </>
   )
+
 }
