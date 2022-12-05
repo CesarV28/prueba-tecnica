@@ -14,7 +14,6 @@ export const Navbar = () => {
 
 
     useEffect(() => {
-        console.log(heroData[`${pathname}`])
         setHero(heroData[`${pathname}`])
     }, [pathname])
     

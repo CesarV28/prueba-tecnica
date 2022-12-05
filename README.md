@@ -30,11 +30,21 @@ a este no se le debe de dar seguimiento a la hora de subirlo a un repositorio re
 
 ### carpeta src
 **assets**: utiliza para guardar archivos estáticos como imágenes, audio, tipografías, video, etc.
+
 **components**: son archivos que contienen el HTML, CSS y Javascript que está relacionado con una determinada parte de la página. En este caso, son componentes globales para la aplicación.
+
+**hooks**: componentes funcionales (funciones) que crean un estado local y permite divir la logica de los componentes .jsx
+
 **data**: en ella se encutran archivos .js que sirven como datos que se pueden enviar a los diferentes componentes del proyecto, ya sea a manera de prueba o para crear una forma dinamica de editar la informacón.
-**layout**: hace referencia a una forma base que tendra la pagina y que sera compartida con las demás, proprcionando siempre un mismo diseño
+
+**layout**: hace referencia a una forma base que tendra la pagina y que sera compartida con las demás, proprcionando siempre un mismo diseño.
+
 **pages**: se encutran todas la páginas del sitio web, son carpetas las cuales tienen su propia ramas de carpetas con archivos propios de esa página: .js, .jsx, .css, carpetas; components, hooks, data, etc.
+
 **router**: aquí esta el enrutador para visitar las demás paginas.
+
 **App.jsx**: se utiliza para dejar más limpio el archivo main.jsx, debido que aquí se crear apartados para establecer el sistema de rutas, contexto de la aplicación, etc.
+
 **App.css**: estilos generales de la aplición en el puento más alto para ser compartidos por todas las carpetas.
+
 **main.jsx**: aquí se ejecuta el uso de React para la aplicación.
