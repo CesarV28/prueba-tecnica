@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-const URL = 'http://localhost:8080/api/contact/';
-
-export const useFetch = () => {
+export const useFetch = (url) => {
   
     const [state, setState] = useState({
         data: null,
@@ -18,7 +16,7 @@ export const useFetch = () => {
         })
 
         try {
-            const resp = await fetch(URL);
+            const resp = await fetch(url);
             const data = await resp.json();
             console.log(data.contacts)
             setState({
@@ -43,7 +41,7 @@ export const useFetch = () => {
         })
 
         try {
-            const dataFetch = await fetch(URL, {
+            const dataFetch = await fetch(url, {
                 method: "POST",
                 body: JSON.stringify(data),
                 headers: {"Content-type": "application/json; charset=UTF-8"}

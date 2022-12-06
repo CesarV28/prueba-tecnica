@@ -3,8 +3,10 @@ import { useForm } from '../hooks/useForm';
 
 import './styles/form.css'
 
+const URL = 'http://localhost:8080/api/contact/';
+
 export const Form = () => {
-  const {isLoading, hasError, sendData} = useFetch()
+  const {isLoading, hasError, sendData} = useFetch(URL)
   const { onInputChange, formState, onResetForm } = useForm({
       name: '',
       email: '',

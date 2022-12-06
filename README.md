@@ -5,7 +5,7 @@ instalación de dependencias del proyecto, puedes decargarlo desde la
 página oficial [NodeJS](https://nodejs.org/en/).
 
 ### Correr el proyecto
-Para poder inicializar las dependencias, iremos a donde se encutra 
+Para poder inicializar las dependencias, iremos a donde se encuentra 
 la carpeta del proyecto utilizando una terminal, para abrirla usaremos
 el comando: 
 
@@ -16,7 +16,7 @@ el comando:
 Una vez estes en la carpeta, escribe el comando:
 ```npm install```
 
-Si no da ningun error, puedes correr el comando:
+Si no da ningún error, puedes correr el comando:
 ```npm run dev```
 nos dara una direccion para poder ver el proyecto en el navegador
 
